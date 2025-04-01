@@ -1,4 +1,46 @@
 /* Тут пиши основные стили */
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bl1 {
+    font-family: "LucidaGrande-Bold", sans-serif;
+    font-size: 42px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: left;
+    line-height: 44px;
+    margin: 48px 0 0 0;
+    width: 700px;
+    max-width: 100%;
+}
+
+.bl2 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: left;
+    line-height: 33px;
+    margin: 50px 0 0 0;
+    width: 700px;
+    max-width: 100%;
+}
+
+.bl3{
+    font-family: "LucidaGrande-Bold", sans-serif;
+    font-size: 34px;
+    color: rgba(0, 0, 0, 0.84);
+    text-align: left;
+    line-height: 44px;
+    margin: 48px 0 0 0;
+    width: 700px;
+    max-width: 100%;
+}
 
 
 @media (max-width: 800px) {
