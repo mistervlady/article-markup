@@ -6,3 +6,36 @@
     Стили применятся только когда страничка будет ≤800px шириной
  */
 }
+
+.container1 {
+    display: flex;
+    justify-content: center;   /* по горизонтали */
+    align-items: center;       /* по вертикали */
+    margin: 43px auto 37px;            /* центрирует сам блок по горизонтали страницы */
+    width: 700px;
+    height: 727px;
+}
+
+.container2 {
+    width: 700px;
+    height: 727px;
+    display: flex;
+    justify-content: center;   /* по горизонтали */
+    align-items: center;       /* по вертикали */
+    /* центрирует сам блок по горизонтали страницы */
+    margin: 43px auto 37px;
+}
+
+.container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* или "cover", в зависимости от задачи */
+    display: block;
+}
+
+.container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* или "cover", в зависимости от задачи */
+    display: block;
+}
