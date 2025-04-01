@@ -1,83 +1,171 @@
-/* Тут пиши основные стили */
 body {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.content {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.bl1 {
-    font-family: "LucidaGrande-Bold", sans-serif;
-    font-size: 42px;
-    color: rgba(0, 0, 0, 0.84);
-    text-align: left;
-    line-height: 44px;
-    margin: 48px 0 0 0;
-    width: 700px;
-    max-width: 100%;
-}
-
-.bl2 {
-    font-family: Georgia, serif;
+p {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: 21px;
-    color: rgba(0, 0, 0, 0.84);
-    text-align: left;
     line-height: 33px;
-    margin: 50px 0 0 0;
-    width: 700px;
-    max-width: 100%;
 }
 
-.bl3{
-    font-family: "LucidaGrande-Bold", sans-serif;
-    font-size: 34px;
-    color: rgba(0, 0, 0, 0.84);
-    text-align: left;
+
+
+p + h2 {
+    margin-top: 55px;
+}
+
+h1 {
+    font-size: 42px;
     line-height: 44px;
-    margin: 48px 0 0 0;
-    width: 700px;
-    max-width: 100%;
 }
 
+h2 {
+    font-size: 34px;
+    line-height: 39px;
+}
 
+h1, h2 {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.logo-img {
+    width: 97px;
+    height: 64px;
+    padding: 0 37px;
+}
+
+.active{
+    color: red;
+}
+
+nav{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size:24px;
+    color:#333333;
+    background-color: #f2f2f2;
+    text-align:left;
+    line-height:36px;
+    border: 1px solid black;
+    display: flex;
+    margin:0;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    cursor: url('responsive-design/2744EFD6-B878-4DCB-B0D5-526F1B233733/9E1721B2-E123-44D1-BBA7-88E713A6A184@1x.png'), auto;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav li{
+    list-style: none;
+    padding: 0 30px;
+}
+
+nav ul{
+    display: flex;
+}
+
+code{
+    font-family: "Courier New", monospace;
+    background-color: lightgray
+}
+
+/* Стили для мобилки */
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
-}
+    body {
+        padding: 0 10px;
+    }
 
-.container1 {
-    display: flex;
-    justify-content: center;   /* по горизонтали */
-    align-items: center;       /* по вертикали */
-    margin: 43px auto 37px;            /* центрирует сам блок по горизонтали страницы */
-    width: 700px;
-    height: 727px;
-}
+    .content {
+        padding: 20px 0;
+    }
 
-.container2 {
-    width: 700px;
-    height: 727px;
-    display: flex;
-    justify-content: center;   /* по горизонтали */
-    align-items: center;       /* по вертикали */
-    /* центрирует сам блок по горизонтали страницы */
-    margin: 43px auto 37px;
-}
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
 
-.container1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* или "cover", в зависимости от задачи */
-    display: block;
-}
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
 
-.container2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* или "cover", в зависимости от задачи */
-    display: block;
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    nav {
+        font-size: 20px;
+        text-align: center;
+        border: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav li {
+        padding: 10px 0;
+    }
+
+    .im {
+        width: 70px;
+        height: auto;
+        padding: 0;
+    }
+
+    img {
+        margin: 10px 0;
+    }
+
+    nav {
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+        font-size: 24px;
+        color: #333333;
+        text-align: left;
+        line-height: 36px;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* вертикально */
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        list-style: none;
+        padding: 8px 0;
+        text-align: left;
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    nav li a:hover {
+        text-decoration: underline;
+    }
 }
